@@ -18,7 +18,7 @@ def positive_places(f, xs):
     """takes as arguments some function f and a list of numbers xs and returns
      a list of those-and-only-those elements x of xs for which f(x)
      is strictly greater than zero"""
-    return [f(x) for x in xs if f(x) > 0]
+    return [x for x in xs if f(x) > 0]
 
 
 def create_plot_data(f, xmin, xmax, n):
